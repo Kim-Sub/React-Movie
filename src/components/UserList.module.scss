@@ -1,0 +1,17 @@
+.card{
+    padding: 50px ;
+    box-sizing: border-box;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #333;
+    margin: 20px 50px;
+    background: #fff;
+   .cardbody{
+     .link{
+        text-decoration: none;
+        color: #03ad9c;
+        font-size: 18px;
+        &:hover{color: red}
+     }
+   } 
+}

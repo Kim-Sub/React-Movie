@@ -1,0 +1,14 @@
+.loding{text-align: center;}
+.user{
+    background-image: linear-gradient(to right, #ee9ca7, #ee9ca7 30%,#ffdde1 70%);
+    padding: 100px; box-sizing: border-box;
+    height: 100vh;
+    .box{width: 80%; height: 500px; background: #ddd; margin: 10px auto;}
+    .name{margin-left: 170px; margin-top: 10px;}
+    .email{margin-left: 170px; margin-top: 10px;}
+    .phone{margin-left: 170px; margin-top: 10px;}
+    .website{margin-left: 170px; margin-top: 10px;}
+}
+.h2{text-align: center; 
+}
+
