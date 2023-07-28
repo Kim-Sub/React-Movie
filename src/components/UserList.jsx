@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import styles from "./UserList.module.scss";
+import styles from "../scss/UserList.module.scss";
 
 const UserList = ({users}) => {
     return (

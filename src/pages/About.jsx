@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import styles from './About.module.scss'
+import styles from '../scss/About.module.scss'
 
 const About = () => {
     const {id} = useParams();

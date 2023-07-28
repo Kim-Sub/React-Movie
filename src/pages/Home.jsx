@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Appmovie from "../components/Appmovie"
-import styles from "./Home.module.scss"
+import styles from "../scss/Home.module.scss"
 import Section1 from "../dist/Section1"
 
 

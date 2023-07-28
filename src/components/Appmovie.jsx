@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import styles from "./Appmovie.module.scss"
+import styles from "../scss/Appmovie.module.scss"
 
 const Appmovie = ({ id, title, posterPath, date }) => {
     return (
