@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Appmovie from "../components/Appmovie"
-import styles from "../scss/Home.module.scss"
 import Section1 from "../dist/Section1"
 
 
@@ -33,8 +32,10 @@ const Home = () => {
                     <span className='load'>'Loading...'</span>
                 </div>
             ) : (
-                <div className={styles.appWrap}>
+                <div style={appWrapStyle}>
                     <Section1></Section1>
+                    <h1 style={h1Style}>영화는 실시간으로 업데이트 됩니다.</h1>
+                    
                     {appMovie.map((amovie) => (
                         <Appmovie
                             id={amovie.id}
@@ -47,6 +48,13 @@ const Home = () => {
             )}
         </div>
     )
+}
+// style
+const h1Style = {
+    width: '100%' , color:'white' ,
+}
+const appWrapStyle = {
+    display: 'flex',  flexWrap: 'wrap', justifyContent: 'center',
 }
 
 export default Home

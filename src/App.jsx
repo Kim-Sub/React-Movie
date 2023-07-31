@@ -1,5 +1,5 @@
 import React from "react"
-import "./scss/App.scss"
+import "./App.scss"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Users from "./pages/Users"
@@ -7,6 +7,8 @@ import Movies from "./pages/Movies"
 import User from "./pages/User"
 import About from "./pages/About"
 import { Routes, Route } from "react-router-dom"
+
+
 
 
 function App() {
