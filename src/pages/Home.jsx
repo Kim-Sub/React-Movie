@@ -26,7 +26,7 @@ const Home = () => {
         getMovies()
     }, [])
     return (
-        <div>
+        <div id="Home">
             {isLoading ? (
                 <div>
                     <span className='load'>'Loading...'</span>
@@ -34,7 +34,8 @@ const Home = () => {
             ) : (
                 <div style={appWrapStyle}>
                     <Section1></Section1>
-                    <h1 style={h1Style}>영화는 실시간으로 업데이트 됩니다.</h1>
+
+                    <h1>영화는 실시간으로 업데이트 됩니다.</h1>
                     
                     {appMovie.map((amovie) => (
                         <Appmovie
@@ -50,9 +51,6 @@ const Home = () => {
     )
 }
 // style
-const h1Style = {
-    width: '100%' , color:'white' ,
-}
 const appWrapStyle = {
     display: 'flex',  flexWrap: 'wrap', justifyContent: 'center',
 }
