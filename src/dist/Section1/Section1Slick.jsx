@@ -32,8 +32,14 @@ const Section1Slick = () => {
          </div>
 
          <div>
-            <img src='이미지URL3' alt='이미지3' />
+            <img src={require('../../img/mainSlide2.jpg')} alt='이미지2' />
          </div>
+
+         <div>
+            <img src={require('../../img/mainSlide3.jpg')} alt='이미지3' />
+         </div>
+
+
       </Slider>
    )
 }

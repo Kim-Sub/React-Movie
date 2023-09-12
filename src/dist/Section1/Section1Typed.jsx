@@ -6,7 +6,7 @@ const Section1Typed = () => {
 
    useEffect(() => {
       const options = {
-         strings: ['나의 인생영화를 언제 어디서든,', '공유하고 기록하세요.'],
+         strings: ['나의 인생영화를 언제 어디서든 공유하고 기록하세요.'],
          typeSpeed: 150, backSpeed: 30, loop: true
       }
 

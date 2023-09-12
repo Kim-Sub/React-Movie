@@ -4,7 +4,7 @@ import { NavLink} from "react-router-dom";
 
 const Navbar = () => {
     const activeStyle = {
-        color:'#e42c2c',
+        color:'#E81D36',
     }
 
     return (
