@@ -67,7 +67,7 @@ body{
             }
          }
       }
-      #Section2{background: white;}
+      #Section2{}
 
       .movieList{ // 영화 리스트
          display: flex; justify-content: center; flex-wrap: wrap;
@@ -86,14 +86,16 @@ body{
    #MovieDetail{ // 영화 상세정보
       background: #3f3e3e33; 
       width: 100%;
-      margin: 0 auto; padding:100px 50px; text-align: center;
-      
-      
-      >div{
-         img{}
-         .overview{margin: 20px 0;}
-         .voteAverage{color: red; font-size: 24px;}
+      margin: 0 auto; padding:100px 0; text-align: center;
+      .Detail1{
+         width: 100vw; height: 100vh;
+         >div{
+            .overview{margin: 20px 0;}
+            .voteAverage{color: red; font-size: 24px;}
+         }
+         >h3{}
       }
+      .Detail2{}
 
    }
    

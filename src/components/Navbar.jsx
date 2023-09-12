@@ -13,8 +13,9 @@ const Navbar = () => {
 
             <ul>
                 <li><NavLink to="" style={({isActive}) => (isActive ? activeStyle : undefined)}>HOME</NavLink></li>
+                <li><NavLink to="Search" style={({isActive}) => (isActive ? activeStyle : undefined)}>SEARCH</NavLink></li>
                 <li><NavLink to="Movies" style={({isActive}) => (isActive ? activeStyle : undefined)}>MY GALLERY</NavLink></li>
-                <li><NavLink to="users" style={({isActive}) => (isActive ? activeStyle : undefined)}>USERS</NavLink></li>
+                <li><NavLink to="Users" style={({isActive}) => (isActive ? activeStyle : undefined)}>USERS</NavLink></li>
             </ul>
         </nav>
     );

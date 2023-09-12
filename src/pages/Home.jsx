@@ -38,7 +38,7 @@ const Home = () => {
                <h1>현재 상영 영화는 실시간으로 업데이트 됩니다.</h1>
 
                {appMovie.map((movie) => (
-                  <Movie id={movie.id} title={movie.title} posterPath={movie.poster_path} date={movie.release_date} />
+                  <Movie id={movie.id} title={movie.title} posterPath={movie.poster_path} date={movie.release_date} score={movie.vote_average} />
                ))}
             </div>
          )}
