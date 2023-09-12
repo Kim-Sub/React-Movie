@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 import Modal from '../../components/Modal';
+import MoviePhotoSlide from './Movie-PhotoSlide';
+
 
 const MovieDetail = () => {
    const { id } = useParams();
@@ -60,9 +62,6 @@ const MovieDetail = () => {
       </div>
    );
 
-   const imageList = images.map((image, index) => (
-      <img key={index} src={`https://image.tmdb.org/t/p/w1280/${image.file_path}`} alt={`${index}`} />
-   ));
 
    const reviewList = reviews.map((review) => (
       <div key={review.id}>
@@ -80,7 +79,7 @@ const MovieDetail = () => {
             {movieDetail}
             <h3 onClick={handleOpenModal}>영화 포토 보기</h3>
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} content={
-               <div>{imageList}</div>
+               <MoviePhotoSlide images={images} className='Movie-Photo' />
             } />
          </div>
          
