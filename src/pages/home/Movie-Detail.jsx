@@ -58,7 +58,7 @@ const MovieDetail = () => {
    ) : (
       <div>
          <div className='overview'>{movie.overview}</div>
-         <div className='voteAverage'>{movie.vote_average}</div>
+         <div className='voteAverage'>평점　:　{movie.vote_average}</div>
       </div>
    );
 

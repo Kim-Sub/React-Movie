@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-
 // CSS
 import "./App.scss"
 // 컴포넌트
@@ -12,19 +11,17 @@ import Search from './pages/Search';
 import Movies from "./pages/Movies"
 import User from "./pages/User"
 import Users from "./pages/Users"
-
 // HOOK
 import Scroll100vh from "./hook/Scroll-100vh"
 import RouterToTop from "./hook/RouterToTop"
 
-
-
+// 배포방법
+// npm run deploy
 
 
 
 function App() {
     
-
 
     return (
         <div className='App'>

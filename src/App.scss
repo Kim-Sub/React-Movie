@@ -26,7 +26,7 @@ body{
       background: #00000060; 
       >a>h3{color: white;}
       ul{
-         display: flex; justify-content: center; 
+         display: flex; justify-content: center;
          li{padding: 0 20px;
             a {color: #fff; font-size: 20px;}
          }
@@ -71,14 +71,23 @@ body{
 
       .movieList{ // 영화 리스트
          display: flex; justify-content: center; flex-wrap: wrap;
-         h1{text-align: center; width: 100%;}
+         h1{text-align: center; width: 100%; margin-bottom: 30px;}
          .Movie{
-            width: 350px; height: 500px; margin: 10px;
+            width: 350px; height: 570px; margin: 10px; padding: 20px 0;
             background: #fffefe; text-align: center;
-            a{color: #0b9da5;
-               h2{text-align: center; font-size: 18px;}
+            a{
+               color: #0b9da5; height: 100%;
+               display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+               h2{
+                  text-align: center; font-size: 21px;
+               }
                img{width: 70%;}
-               p{margin-top: 30px;}
+               p{
+                  height: 20px; display: flex; align-items: center;
+                  span{
+                     >svg{font-size: 30px;}
+                  }
+               }
             }
          }
       }
@@ -88,12 +97,18 @@ body{
       width: 100%;
       margin: 0 auto; padding:100px 0; text-align: center;
       .Detail1{
-         width: 100vw; height: 100vh;
+         width: 100vw; max-width:1280px ; height: 100vh;
+         margin: 0 auto;
          >div{
             .overview{margin: 20px 0;}
             .voteAverage{color: red; font-size: 24px;}
          }
-         >h3{}
+         >h3{ // 영화 포토 보기 버튼
+            position: fixed; left: 5%; top: 50%; cursor: pointer;
+            display: flex; justify-content: center; align-items: center;
+            width: 150px; height: 150px; border-radius: 50%;
+            background: blue;
+         }
          .modal-content{ // 영화 사진 모달창
             background: white;
             width: 1280px;
@@ -101,7 +116,9 @@ body{
          
          }
       }
-      .Detail2{}
+      .Detail2{
+         width: 100vw; max-width:1280px ; height: 100vh;
+         margin: 0 auto;}
 
    }
    #Search{ // 영화 검색 기능
