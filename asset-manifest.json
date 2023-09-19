@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Movie/static/css/main.37b7f1a7.css",
-    "main.js": "/React-Movie/static/js/main.c068ab8e.js",
+    "main.css": "/React-Movie/static/css/main.1e1c8c2e.css",
+    "main.js": "/React-Movie/static/js/main.d35dbefc.js",
     "static/media/mainVideo.mp4": "/React-Movie/static/media/mainVideo.d33fa1729275a0eb4742.mp4",
     "static/media/mainSlide2.jpg": "/React-Movie/static/media/mainSlide2.4b023c00004dc6e87f16.jpg",
     "static/media/mainSlide3.jpg": "/React-Movie/static/media/mainSlide3.b7899538a3d14fb0c14b.jpg",
@@ -11,11 +11,11 @@
     "static/media/slick.ttf": "/React-Movie/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-Movie/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-Movie/index.html",
-    "main.37b7f1a7.css.map": "/React-Movie/static/css/main.37b7f1a7.css.map",
-    "main.c068ab8e.js.map": "/React-Movie/static/js/main.c068ab8e.js.map"
+    "main.1e1c8c2e.css.map": "/React-Movie/static/css/main.1e1c8c2e.css.map",
+    "main.d35dbefc.js.map": "/React-Movie/static/js/main.d35dbefc.js.map"
   },
   "entrypoints": [
-    "static/css/main.37b7f1a7.css",
-    "static/js/main.c068ab8e.js"
+    "static/css/main.1e1c8c2e.css",
+    "static/js/main.d35dbefc.js"
   ]
 }
