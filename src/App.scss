@@ -20,6 +20,7 @@ body{
    font-family: 'NanumSquareRound', sans-serif;
    width: 100%; height: fit-content; overflow-x: hidden; 
    nav { // 최상단 네비메뉴
+      font-family: 'TTWanjunuricheR';
       position: fixed; top: 0; left: 0; z-index: 20;
       width: 70%; height: 80px; padding: 0 15%;
       display: flex; align-items: center; justify-content: space-between;
@@ -28,7 +29,9 @@ body{
       ul{
          display: flex; justify-content: center;
          li{padding: 0 20px;
-            a {color: #fff; font-size: 20px;}
+            a {color: white; font-size: 20px;
+               &:hover{color: $subColor;}
+            }
          }
       }
    }
@@ -70,55 +73,78 @@ body{
       #Section2{}
 
       .movieList{ // 영화 리스트
-         display: flex; justify-content: center; flex-wrap: wrap;
-         h1{text-align: center; width: 100%; margin-bottom: 30px;}
-         .Movie{
-            width: 350px; height: 570px; margin: 10px; padding: 20px 0;
-            background: #fffefe; text-align: center;
-            a{
-               color: #0b9da5; height: 100%;
-               display: flex; flex-direction: column; align-items: center; justify-content: space-around;
-               h2{
-                  text-align: center; font-size: 21px;
-               }
-               img{width: 70%;}
-               p{
-                  height: 20px; display: flex; align-items: center;
-                  span{
-                     >svg{font-size: 30px;}
+         display: flex; flex-direction: column; align-items: center;
+         h1{margin-bottom: 30px; }
+         // 평점 순으로 보기 버튼
+         >p{padding: 20px; margin-bottom: 30px; cursor: pointer;
+            background: $subColor; font-family: 'TTWanjunuricheR';
+            transition: .5s;
+            &:hover{border-radius: 30px;}
+         }
+         >div{
+            display: flex; flex-wrap: wrap; justify-content: center;
+            .Movie{
+               width: 350px; height: 570px; margin: 10px; padding: 20px 0;
+               background: #fffefe; text-align: center;
+               a{
+                  color: #0b9da5; height: 100%;
+                  display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+                  h2{
+                     font-weight: 500; font-size: 22px; font-family: 'TTWanjunuricheR';
+                     text-align: center; 
+                  }
+                  img{width: 70%;}
+                  p{
+                     height: 20px; display: flex; align-items: center;
+                     span{
+                        >svg{font-size: 30px;}
+                     }
                   }
                }
             }
          }
+
       }
    }
    #MovieDetail{ // 영화 상세정보
-      background: #3f3e3e33; 
       width: 100%;
-      margin: 0 auto; padding:100px 0; text-align: center;
+      margin: 0 auto; padding:100px 0; text-align: center; 
       .Detail1{
          width: 100vw; max-width:1280px ; height: 100vh;
          margin: 0 auto;
          >div{
             .overview{margin: 20px 0;}
-            .voteAverage{color: red; font-size: 24px;}
+            .voteAverage{color: $mainColor; font-size: 24px;}
          }
-         >h3{ // 영화 포토 보기 버튼
-            position: fixed; left: 5%; top: 50%; cursor: pointer;
+         h3{ // 영화 포토 보기 버튼
+            position: fixed; left: 5%; top: 50%; transform :translateY(-50%);
             display: flex; justify-content: center; align-items: center;
-            width: 150px; height: 150px; border-radius: 50%;
-            background: blue;
+            width: 150px; height: 50px; border-radius: 50%;
+            cursor: pointer; font-family: 'TTWanjunuricheR';
+            &:hover .h3cover{
+               width: 135px; border-radius: 0;
+            }
+            .h3cover{
+               background: $subColor; width: 50px; height: 50px; transition: .5s; z-index: -1;
+            }
          }
+         .goReview{top: 57%; color: white;}
          .modal-content{ // 영화 사진 모달창
             background: white;
             width: 1280px;
             img{width: 1290px; margin: -5px 0;}
-         
          }
       }
       .Detail2{
          width: 100vw; max-width:1280px ; height: 100vh;
-         margin: 0 auto;}
+         margin: 0 auto;
+         >h3{}
+         >div{ // 영화 리뷰
+            margin-bottom: 50px;
+            h3{text-align: left;}
+            p{text-align: left;}
+         }
+      }
 
    }
    #Search{ // 영화 검색 기능

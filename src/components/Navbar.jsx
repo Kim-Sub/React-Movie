@@ -5,6 +5,7 @@ import { NavLink} from "react-router-dom";
 const Navbar = () => {
     const activeStyle = {
         color:'#E81D36',
+        fontWeight: 'bold',
     }
 
     return (

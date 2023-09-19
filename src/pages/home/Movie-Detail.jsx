@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,} from 'react-router-dom';
 import axios from 'axios';
 
 import Modal from '../../components/Modal';
@@ -13,6 +13,7 @@ const MovieDetail = () => {
    const [reviews, setReviews] = useState([]);
    const [images, setImages] = useState([]);
    const [loading, setLoading] = useState(true);
+   
 
    // 모달 컴포넌트
    const [isModalOpen, setIsModalOpen] = useState(false);
@@ -47,6 +48,14 @@ const MovieDetail = () => {
    }, [id]);
 
 
+   const scrollToReview = () => { // 영화 리뷰 보기 버튼
+      window.scrollTo({
+        top: window.innerHeight, 
+        behavior: 'smooth', 
+      });
+    };
+
+   // 프롭스 요소들
    const movieTrailer = trailers.map((trailer) => (
       <div key={trailer.key}>
          <iframe width='1280' height='700' src={`https://www.youtube.com/embed/${trailer.key}`} title={trailer.name} frameBorder='0' allowFullScreen></iframe>
@@ -77,7 +86,12 @@ const MovieDetail = () => {
          <div className='Detail1'>
             {movieTrailer}
             {movieDetail}
-            <h3 onClick={handleOpenModal}>영화 포토 보기</h3>
+            <h3 className='h3' onClick={handleOpenModal}>영화 포토 보기
+               <h3 className='h3cover'> </h3>
+            </h3>
+            <h3 className='goReview' onClick={scrollToReview}>영화 리뷰 보기
+               <h3 className='h3cover'> </h3>
+            </h3>
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} content={
                <MoviePhotoSlide images={images} className='Movie-Photo' />
             } />
